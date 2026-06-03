@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+
+  --color-dark-bg: #000000;
+  --color-glass-card: rgba(5, 12, 7, 0.45);
+  --color-glass-border: rgba(255, 255, 255, 0.06);
+
+  --color-brand-green: #15803d; /* Dark Green */
+  --color-brand-green-light: #86efac; /* Light Green shade */
+  --color-brand-green-dark: #14532d; /* Deep Dark Green */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #86efac, #15803d);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #14532d;
+}
+
+/* Base styles */
+body {
+  background-color: #000000;
+  color: #e2e8f0;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Glassmorphism helper class */
+.glass {
+  background: rgba(5, 12, 7, 0.45);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-nav {
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Glow effects */
+.glow-shadow-green {
+  box-shadow: 0 0 25px rgba(21, 128, 61, 0.25);
+}
+.glow-shadow-light {
+  box-shadow: 0 0 25px rgba(134, 239, 172, 0.15);
+}
+
+/* Skill Galaxy - CSS Orbit Positions (Responsive coordinates dynamically calculated or layouted) */
+.orbit-line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 1px dashed rgba(255, 255, 255, 0.08);
+  pointer-events: none;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(3deg); }
+}
+
+.animate-float-slow {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-medium {
+  animation: float 4s ease-in-out infinite;
+}
+
+.animate-float-fast {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Animation utilities for blob meshes */
+@keyframes blob-pivot {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  33% { transform: translate(30px, -50px) scale(1.1); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
+}
+
+.animate-blob-slow {
+  animation: blob-pivot 12s ease-in-out infinite;
+}
+
+.animate-blob-medium {
+  animation: blob-pivot 8s ease-in-out infinite;
+}
