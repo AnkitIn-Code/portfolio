@@ -147,7 +147,7 @@ export default function Navbar() {
                 <Github size={18} />
               </a>
               <a
-                href="https://linkedin.com/in/ankit-kumar"
+                href="https://www.linkedin.com/in/ankit-kumar-34404a290"
                 target="_blank"
                 rel="noreferrer"
                 className="text-slate-400 hover:text-brand-green transition-colors"

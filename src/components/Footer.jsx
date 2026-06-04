@@ -68,7 +68,7 @@ export default function Footer() {
             </a>
 
             <a
-              href="https://linkedin.com/in/ankit-kumar"
+              href="https://www.linkedin.com/in/ankit-kumar-34404a290"
               target="_blank"
               rel="noreferrer"
               className="w-9 h-9 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-slate-400 hover:text-brand-green hover:border-brand-green/40 transition-all"

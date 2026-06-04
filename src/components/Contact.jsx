@@ -223,7 +223,7 @@ export default function Contact() {
             <h5 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-4">Connect with me</h5>
             <div className="flex space-x-4">
               <a
-                href="https://linkedin.com/in/ankit-kumar"
+                href="https://www.linkedin.com/in/ankit-kumar-34404a290"
                 target="_blank"
                 rel="noreferrer"
                 className="px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 hover:border-brand-green hover:text-brand-green text-slate-300 font-semibold flex items-center space-x-2 transition-all cursor-pointer"
